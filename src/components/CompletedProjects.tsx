@@ -68,7 +68,7 @@ const projects: Project[] = [
     description:
       "AI extension that rewrites Instagram messages in different tones.",
     technologies: ["JavaScript", "Node.js", "OpenAI API"],
-    liveUrl: "#",
+    liveUrl: "https://chromewebstore.google.com/detail/ig-dm-rewriter-ai/ojfonhbklifhknobmhojkbhapmcjnoil?utm_source=item-share-cb",
   },
    {
     title: "AuraaGlow",
@@ -78,11 +78,11 @@ const projects: Project[] = [
     liveUrl: "https://auraaglow.netlify.app/",
   },
   {
-    title: "SolHotel",
+    title: "CotterandKnuckle",
     description:
-      "Hotel application for browsing rooms and managing reservations.",
+      "A booking website for a power generator dealer",
     technologies: ["React", "Axios", "REST API", "Authentication"],
-    liveUrl: "#",
+    liveUrl: "https://cotterandknuckleengineering.com/",
   },
  
   {
