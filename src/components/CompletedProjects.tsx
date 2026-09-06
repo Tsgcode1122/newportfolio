@@ -18,6 +18,13 @@ const projects: Project[] = [
     recent: true,
   },
   {
+    title: "University News and Events Hub",
+    description:
+      "A Drupal-based university website for publishing news, managing events, organizing content, and supporting an editorial approval workflow.",
+    technologies: ["Drupal", "Twig", "CSS"],
+     liveUrl: "https://sunny-dieffenbachia-055c24.netlify.app/",
+  },
+  {
     title: "CSCI Project Hub",
     description:
       "Centralizes student and faculty research projects for easier discovery.",

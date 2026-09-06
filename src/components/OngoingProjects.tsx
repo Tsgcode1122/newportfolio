@@ -14,12 +14,12 @@ const ongoingProjects: OngoingProject[] = [
     status: "In development",
   },
   {
-    title: "University News and Events Hub",
-    description:
-      "A Drupal-based university website for publishing news, managing events, organizing content, and supporting an editorial approval workflow.",
-    technologies: ["Drupal", "PHP", "Twig", "CSS"],
-    status: "In development",
-  },
+  title: "ReserveFlow – Resource Reservation System",
+  description:
+    "A role-based reservation system for managing resources, availability, booking requests, approvals, and user notifications.",
+  technologies: ["C#", "ASP.NET Core", "Blazor", "PostgreSQL"],
+  status: "In Development",
+},
    {
     title: "Student Support and Case Management System",
     description:
