@@ -22,7 +22,7 @@ const projects: Project[] = [
     description:
       "A Drupal-based university website for publishing news, managing events, organizing content, and supporting an editorial approval workflow.",
     technologies: ["Drupal", "Twig", "CSS"],
-     liveUrl: "https://sunny-dieffenbachia-055c24.netlify.app/",
+     liveUrl: "https://live-universitynewshub.pantheonsite.io/",
   },
   {
     title: "CSCI Project Hub",
