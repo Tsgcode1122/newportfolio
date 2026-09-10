@@ -29,7 +29,7 @@ const projects: Project[] = [
     description:
       "Centralizes student and faculty research projects for easier discovery.",
     technologies: ["React", "TypeScript", "Styled Components", "Ant Design"],
-    liveUrl: "https://csciprojecthub.etsu.edu/",
+    liveUrl: "https://csciprojecthub.netlify.app/",
     recent: true,
   },
   {
