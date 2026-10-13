@@ -22,7 +22,15 @@ const projects: Project[] = [
     description:
       "A Drupal-based university website for publishing news, managing events, organizing content, and supporting an editorial approval workflow.",
     technologies: ["Drupal", "Twig", "CSS"],
-     liveUrl: "https://live-universitynewshub.pantheonsite.io/",
+    liveUrl: "https://drupal-university-news-hub.netlify.app/",
+  },
+  {
+    title: "Student Success Hub",
+    description:
+      "Centralizes student support resources and services to help students easily find the assistance they need.",
+    technologies: ["WordPress", "PHP", "ACF", "JavaScript"],
+    liveUrl: "https://studentsuccesshub.freedev.app/?i=1",
+    recent: true,
   },
   {
     title: "CSCI Project Hub",
@@ -39,7 +47,7 @@ const projects: Project[] = [
     technologies: ["WordPress", "PHP", "HTML", "CSS", "JavaScript"],
     liveUrl: "https://hamptonharmonyhealthcare.com/",
   },
-  
+
   {
     title: "GemLuxe Aesthetics",
     description:
@@ -47,7 +55,7 @@ const projects: Project[] = [
     technologies: ["React", "Node.js", "Express", "PDF Generation"],
     liveUrl: "https://gemluxeaesthetics.com/",
   },
- 
+
   {
     title: "Ignition Car Care",
     description:
@@ -55,7 +63,7 @@ const projects: Project[] = [
     technologies: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://ignitioncarcare.netlify.app/",
   },
- 
+
   {
     title: "TS Calculator",
     description:
@@ -63,21 +71,22 @@ const projects: Project[] = [
     technologies: ["React", "JavaScript", "Invoice Generation"],
     liveUrl: "https://tsf-calculator.netlify.app/",
   },
-   {
+  {
     title: "OneStopBody",
     description:
       "Animated landing page for exploring and ordering body-care products.",
     technologies: ["React", "Styled Components", "Framer Motion"],
     liveUrl: "https://onestopbody.netlify.app/",
   },
-   {
+  {
     title: "IG DM Rewriter",
     description:
       "AI extension that rewrites Instagram messages in different tones.",
     technologies: ["JavaScript", "Node.js", "OpenAI API"],
-    liveUrl: "https://chromewebstore.google.com/detail/ig-dm-rewriter-ai/ojfonhbklifhknobmhojkbhapmcjnoil?utm_source=item-share-cb",
+    liveUrl:
+      "https://chromewebstore.google.com/detail/ig-dm-rewriter-ai/ojfonhbklifhknobmhojkbhapmcjnoil?utm_source=item-share-cb",
   },
-   {
+  {
     title: "AuraaGlow",
     description:
       "Responsive skincare website showcasing premium beauty products.",
@@ -86,12 +95,11 @@ const projects: Project[] = [
   },
   {
     title: "CotterandKnuckle",
-    description:
-      "A booking website for a power generator dealer",
+    description: "A booking website for a power generator dealer",
     technologies: ["React", "Axios", "REST API", "Authentication"],
     liveUrl: "https://cotterandknuckleengineering.com/",
   },
- 
+
   {
     title: "Comfy Store",
     description:
@@ -99,7 +107,6 @@ const projects: Project[] = [
     technologies: ["React", "REST API", "JavaScript"],
     liveUrl: "https://tsgcomfystore.netlify.app/",
   },
-  
 ];
 
 const recentProjects = projects.filter((project) => project.recent);
@@ -110,16 +117,11 @@ interface ProjectCardProps {
   featured?: boolean;
 }
 
-function ProjectCard({
-  project,
-  featured = false,
-}: ProjectCardProps) {
+function ProjectCard({ project, featured = false }: ProjectCardProps) {
   return (
     <article
       className={`break-inside-avoid rounded-md bg-[#292929] text-white transition duration-300 hover:bg-[#303030] ${
-        featured
-          ? "min-h-60 p-6 sm:p-7"
-          : "mb-4 inline-block w-full p-5"
+        featured ? "min-h-60 p-6 sm:p-7" : "mb-4 inline-block w-full p-5"
       }`}
     >
       <div className="flex h-full flex-col">
@@ -165,11 +167,7 @@ function CompletedProjects() {
 
       <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-2">
         {recentProjects.map((project) => (
-          <ProjectCard
-            key={project.title}
-            project={project}
-            featured
-          />
+          <ProjectCard key={project.title} project={project} featured />
         ))}
       </div>
 
@@ -179,10 +177,7 @@ function CompletedProjects() {
 
       <div className="mt-3 columns-1 gap-4 sm:columns-2">
         {otherProjects.map((project) => (
-          <ProjectCard
-            key={project.title}
-            project={project}
-          />
+          <ProjectCard key={project.title} project={project} />
         ))}
       </div>
     </section>
