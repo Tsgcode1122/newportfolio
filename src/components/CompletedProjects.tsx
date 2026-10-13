@@ -15,7 +15,6 @@ const projects: Project[] = [
       "Helps teachers document instruction and receive structured coaching feedback.",
     technologies: ["React", "TypeScript", "Go", "PostgreSQL"],
     liveUrl: "https://sunny-dieffenbachia-055c24.netlify.app/",
-    recent: true,
   },
   {
     title: "University News and Events Hub",
@@ -23,6 +22,7 @@ const projects: Project[] = [
       "A Drupal-based university website for publishing news, managing events, organizing content, and supporting an editorial approval workflow.",
     technologies: ["Drupal", "Twig", "CSS"],
     liveUrl: "https://drupal-university-news-hub.netlify.app/",
+    recent: true,
   },
   {
     title: "Student Success Hub",
@@ -38,7 +38,6 @@ const projects: Project[] = [
       "Centralizes student and faculty research projects for easier discovery.",
     technologies: ["React", "TypeScript", "Styled Components", "Ant Design"],
     liveUrl: "https://csciprojecthub.netlify.app/",
-    recent: true,
   },
   {
     title: "Hampton & Harmony Healthcare",
